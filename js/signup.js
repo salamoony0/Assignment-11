@@ -126,12 +126,11 @@ function validatePassword ( ) {
 document.getElementById("signUpBtn").addEventListener("click", function () {
   if (validateName() && validateEmail() && validatePassword()) {
     if (validateRegisteredEmail()) {
-      // ✅ success
       successMsg.classList.remove("d-none");
       registered.classList.add("d-none");
       failMsg.classList.add("d-none");
 
-      // create user object
+      
       var user = {
         name: nameInput.value,
         email: emailInput.value,
@@ -142,14 +141,14 @@ document.getElementById("signUpBtn").addEventListener("click", function () {
       localStorage.setItem("usersList", JSON.stringify(users));
       console.log(users);
     } else {
-      // ❌ email already exists
+      
       registered.classList.remove("d-none");
       emailInput.classList.remove("is-valid");
       emailInput.classList.add("is-invalid");
       successMsg.classList.add("d-none");
     }
   } else {
-    // ❌ validation failed
+    
     failMsg.classList.remove("d-none");
   }
 });

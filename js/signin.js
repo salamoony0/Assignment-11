@@ -10,7 +10,7 @@ function loginUser() {
   }
   let foundUser = users.find(user => user.email.toLowerCase() === email && user.password === password);
 if (foundUser) {
-  
+  //  
 
     localStorage.setItem("currentUser", JSON.stringify(foundUser));
     window.location.href = "home.html";
