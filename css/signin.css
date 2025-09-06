@@ -1,0 +1,54 @@
+.main-sec {
+    background-color: #24353F;
+    min-height: 100vh;
+}
+h1 , input , button , p {
+    font-family: sans-serif;
+}
+.inner {
+width: 75%;
+    background-color: #24353F;
+    
+}
+.shadow-xxl {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.5) !important;
+}
+
+.txt-blue {
+    color: #17A2B8;
+}
+.form-control {
+    background-color: transparent;
+    color: white;
+    
+}
+.w-95{
+    width: 95%;
+}
+.btn {
+    background-color: transparent;
+    color :#17A2B8;
+    border-color: inherit;
+}
+
+.btn:hover {
+    background-color: #17A2B8;
+    border-color: transparent;
+}
+.form-control:focus {
+    background-color: transparent;
+    border-color: #80BDFF !important;
+    box-shadow: none !important;
+}
+::placeholder {
+    color: #B6B2B2 !important;
+    opacity: 1 !important;
+}
+p a:hover{
+
+    text-decoration: underline !important;
+    
+}
+input {
+    color: white !important;
+}
